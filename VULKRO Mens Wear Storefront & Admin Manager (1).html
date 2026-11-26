@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VULKRO Mens Wear | Style Beyond Limits</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#0A0A0A',
+            charcoal: '#141414',
+            graphite: '#1D1D1D',
+            gold: {
+              DEFAULT: '#D4AF37',
+              light: '#E8C762',
+              dark: '#9E7E1B',
+            },
+            platinum: '#E5E7EB',
+          },
+          fontFamily: {
+            display: ['Cinzel', 'serif'],
+            serif: ['Cormorant Garamond', 'serif'],
+            script: ['Great Vibes', 'cursive'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          boxShadow: {
+            'gold-glow': '0 0 32px rgba(212, 175, 55, 0.16)',
+            'gold-btn': '0 10px 25px -5px rgba(212, 175, 55, 0.35)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0A0A0A;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2E2E2E;
+      border-radius: 999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #D4AF37;
+    }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #F5DF96 0%, #D4AF37 48%, #A2781A 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .silver-gradient-text {
+      background: linear-gradient(180deg, #FFFFFF 0%, #E5E7EB 58%, #A3A9B3 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gold-border-subtle {
+      border-color: rgba(212, 175, 55, 0.24);
+    }
+
+    .product-card-img {
+      transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .product-card:hover .product-card-img {
+      transform: scale(1.06);
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fade-up {
+      animation: fadeUp 0.55s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-obsidian text-platinum font-sans antialiased selection:bg-gold selection:text-obsidian overflow-x-hidden">
+
+  <!-- Dynamic Top Luxury Announcement Bar -->
+  <div id="top-announcement" class="bg-charcoal border-b gold-border-subtle py-2 px-4 text-center text-[11px] sm:text-xs tracking-[0.18em] uppercase text-platinum/85">
+    Free Express Shipping Across India on Orders Above <span id="top-threshold-text" class="text-gold-light font-semibold">₹1,499</span> &bull; Use Code <span id="top-promo-text" class="text-gold font-semibold">VULKRO10</span> for <span id="top-discount-text" class="text-gold font-semibold">10%</span> Off
+  </div>
+
+  <!-- Sticky Minimalist Luxury Navbar -->
+  <header class="sticky top-0 z-40 bg-obsidian/92 backdrop-blur-xl border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Mobile Menu Toggle -->
+        <div class="flex items-center lg:hidden">
+          <button id="mobile-menu-btn" aria-label="Open Navigation" class="p-2.5 rounded-xl text-platinum hover:text-gold hover:bg-white/5 transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Custom VULKRO V-Hanger Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 flex items-center justify-center">
+            <svg viewBox="0 0 120 110" class="w-full h-full drop-shadow-[0_2px_10px_rgba(212,175,55,0.3)]" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="silverLeft" x1="15" y1="20" x2="58" y2="98" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#FFFFFF"/>
+                  <stop offset="55%" stop-color="#D7DCE3"/>
+                  <stop offset="100%" stop-color="#989FA9"/>
+                </linearGradient>
+                <linearGradient id="goldRight" x1="60" y1="20" x2="105" y2="98" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#F6DF92"/>
+                  <stop offset="50%" stop-color="#D4AF37"/>
+                  <stop offset="100%" stop-color="#9A7616"/>
+                </linearGradient>
+                <linearGradient id="hangerGold" x1="12" y1="10" x2="108" y2="55" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#C99E28"/>
+                  <stop offset="50%" stop-color="#F7E29C"/>
+                  <stop offset="100%" stop-color="#B88B1D"/>
+                </linearGradient>
+              </defs>
+              <path d="M18 22H39L58 84L49 98L23 32L18 22Z" fill="url(#silverLeft)"/>
+              <path d="M102 22H81L54 98H67L97 32L102 22Z" fill="url(#goldRight)"/>
+              <path d="M60 22V17.5C60 13.5 56.8 10 53 10C49.5 10 47 12.6 47 15.8" stroke="url(#hangerGold)" stroke-width="3.6" stroke-linecap="round"/>
+              <path d="M14 55C23 41 44 33 60 23C76 33 97 41 106 55C93 46 75 40 60 32C45 40 27 46 14 55Z" fill="url(#hangerGold)"/>
+              <path d="M47 43L60 54L73 43" stroke="#E5C158" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="60" cy="64" r="3.5" fill="#E5C158"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-start">
+              <span class="font-display font-bold text-xl sm:text-2xl tracking-[0.16em] silver-gradient-text leading-none">
+                VULK<span class="gold-gradient-text">R</span>O
+              </span>
+              <span class="text-[8px] text-platinum/70 font-semibold ml-0.5 -mt-0.5">TM</span>
+            </div>
+            <span class="text-[9px] tracking-[0.38em] text-gold/90 uppercase mt-1 font-medium">Mens Wear</span>
+          </div>
+        </a>
+
+        <!-- Desktop Category Navigation -->
+        <nav class="hidden lg:flex items-center gap-7" aria-label="Main Categories">
+          <button onclick="selectCategory('All', true)" data-nav-cat="All" class="nav-link text-xs uppercase tracking-[0.2em] font-semibold text-gold transition py-2 border-b-2 border-gold">
+            All
+          </button>
+          <button onclick="selectCategory('Shirts', true)" data-nav-cat="Shirts" class="nav-link text-xs uppercase tracking-[0.2em] font-medium text-platinum/75 hover:text-gold transition py-2 border-b-2 border-transparent">
+            Shirts
+          </button>
+          <button onclick="selectCategory('Pants', true)" data-nav-cat="Pants" class="nav-link text-xs uppercase tracking-[0.2em] font-medium text-platinum/75 hover:text-gold transition py-2 border-b-2 border-transparent">
+            Pants
+          </button>
+          <button onclick="selectCategory('Jackets', true)" data-nav-cat="Jackets" class="nav-link text-xs uppercase tracking-[0.2em] font-medium text-platinum/75 hover:text-gold transition py-2 border-b-2 border-transparent">
+            Jackets
+          </button>
+          <button onclick="selectCategory('T-Shirts', true)" data-nav-cat="T-Shirts" class="nav-link text-xs uppercase tracking-[0.2em] font-medium text-platinum/75 hover:text-gold transition py-2 border-b-2 border-transparent">
+            T-Shirts
+          </button>
+        </nav>
+
+        <!-- Right Controls: Manage Store (Admin), Search & Bag -->
+        <div class="flex items-center gap-2 sm:gap-2.5">
+          <!-- Store Owner Admin Drawer Trigger -->
+          <button onclick="openAdminDrawer()" aria-label="Manage Store Settings and Products" class="flex items-center gap-1.5 px-3 py-2.5 rounded-xl bg-charcoal/90 border border-white/15 hover:border-gold text-platinum/90 hover:text-gold text-xs font-medium transition" title="Edit Store Settings & Products">
+            <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 0 1 1.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.559.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.929.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 0 1-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.398.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 0 1-.12-1.45l.527-.737c.25-.35.272-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 0 1 .12-1.45l.773-.773a1.125 1.125 0 0 1 1.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+            <span class="hidden md:inline tracking-wider uppercase text-[11px]">Manage Store</span>
+          </button>
+
+          <!-- Search Button -->
+          <button id="search-toggle-btn" aria-label="Search Products" class="p-2.5 rounded-xl text-platinum/85 hover:text-gold hover:bg-white/5 transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+          </button>
+
+          <!-- Bag Button -->
+          <button id="open-bag-btn" aria-label="Open Shopping Bag" class="relative flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-charcoal border gold-border-subtle hover:border-gold text-platinum hover:text-gold transition group">
+            <svg class="w-5 h-5 text-gold group-hover:scale-105 transition-transform" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+            </svg>
+            <span class="hidden sm:inline text-xs uppercase tracking-wider font-semibold">Bag</span>
+            <span id="bag-count-badge" class="inline-flex items-center justify-center min-w-[20px] h-5 px-1.5 text-[11px] font-bold rounded-full bg-gold text-obsidian">
+              0
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Expandable Search Bar -->
+      <div id="search-bar-container" class="hidden pb-4">
+        <div class="relative max-w-2xl mx-auto">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search shirts, structured jackets, pleated trousers, tees..."
+            class="w-full bg-charcoal border gold-border-subtle focus:border-gold rounded-xl pl-11 pr-14 py-3 text-sm text-platinum placeholder:text-platinum/40 focus:outline-none transition"
+          />
+          <svg class="w-4 h-4 text-gold absolute left-4 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+          <button id="clear-search-btn" class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 text-xs text-platinum/60 hover:text-gold">
+            Clear
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav-drawer" class="hidden lg:hidden bg-charcoal border-t border-white/10 px-6 py-5 space-y-3">
+      <button onclick="selectCategory('All', true); toggleMobileMenu(false)" class="block w-full text-left py-2 text-sm uppercase tracking-[0.2em] text-gold font-semibold">All Collections</button>
+      <button onclick="selectCategory('Shirts', true); toggleMobileMenu(false)" class="block w-full text-left py-2 text-sm uppercase tracking-[0.2em] text-platinum/80 hover:text-gold">Shirts</button>
+      <button onclick="selectCategory('Pants', true); toggleMobileMenu(false)" class="block w-full text-left py-2 text-sm uppercase tracking-[0.2em] text-platinum/80 hover:text-gold">Pants</button>
+      <button onclick="selectCategory('Jackets', true); toggleMobileMenu(false)" class="block w-full text-left py-2 text-sm uppercase tracking-[0.2em] text-platinum/80 hover:text-gold">Jackets</button>
+      <button onclick="selectCategory('T-Shirts', true); toggleMobileMenu(false)" class="block w-full text-left py-2 text-sm uppercase tracking-[0.2em] text-platinum/80 hover:text-gold">T-Shirts</button>
+      <div class="pt-2 border-t border-white/10">
+        <button onclick="openAdminDrawer(); toggleMobileMenu(false)" class="flex items-center gap-2 py-2 text-sm uppercase tracking-[0.18em] text-gold-light font-semibold">
+          <span>⚙ Manage Store & Products</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Full-Bleed Dark Editorial Hero Banner -->
+  <section class="relative min-h-[82vh] flex items-center overflow-hidden bg-obsidian border-b border-white/10">
+    <!-- Background Editorial Visual -->
+    <div class="absolute inset-0 z-0">
+      <img
+        src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1920&q=85"
+        onerror="this.onerror=null;this.src='https://placehold.co/1920x1080/0A0A0A/D4AF37?text=VULKRO+MENS+WEAR';"
+        alt="VULKRO Mens Wear Editorial Campaign"
+        class="w-full h-full object-cover object-center opacity-40 scale-105"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-obsidian via-obsidian/88 to-obsidian/40"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-obsidian/65"></div>
+    </div>
+
+    <!-- Ambient Gold Glow -->
+    <div class="absolute -left-24 top-1/3 w-96 h-96 bg-gold/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Copy -->
+        <div class="lg:col-span-7 animate-fade-up">
+          <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-charcoal/90 border gold-border-subtle mb-6">
+            <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
+            <span class="text-[11px] sm:text-xs font-display tracking-[0.3em] text-gold-light uppercase">VULKRO MENS WEAR &bull; <span id="hero-city-badge">CHENNAI</span></span>
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.08] text-white">
+            SHARP CUTS. <br />
+            <span class="gold-gradient-text">BOLD IDENTITY.</span>
+          </h1>
+
+          <p class="font-script text-3xl sm:text-4xl text-gold-light mt-3 mb-5">
+            Style Beyond Limits
+          </p>
+
+          <p class="text-sm sm:text-base text-platinum/75 leading-relaxed max-w-xl mb-9 font-light">
+            Elevated menswear engineered for modern presence. Discover tailored dress shirts, structured outerwear, pleated trousers, and heavyweight essentials crafted with precision.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="#collection" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-gold-light via-gold to-gold-dark text-obsidian font-bold text-xs sm:text-sm uppercase tracking-[0.2em] shadow-gold-btn hover:brightness-110 transition">
+              <span>Explore Collection</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+            <button onclick="openAdminDrawer()" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-charcoal/85 hover:bg-charcoal border gold-border-subtle hover:border-gold text-platinum text-xs sm:text-sm uppercase tracking-[0.18em] font-medium transition">
+              <span>Customize Store</span>
+            </button>
+          </div>
+
+          <!-- 4 Category Emblem Quick Links -->
+          <div class="grid grid-cols-4 gap-3 sm:gap-6 max-w-md mt-12 pt-8 border-t border-white/10">
+            <button onclick="selectCategory('Shirts', true)" class="group text-center">
+              <div class="w-11 h-11 mx-auto rounded-xl bg-charcoal/90 border border-white/10 group-hover:border-gold flex items-center justify-center text-gold transition mb-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6a2 2 0 1 0-2-2m2 2 8 5.5a1 1 0 0 1-.55 1.83H4.55A1 1 0 0 1 4 11.5L12 6Z" />
+                </svg>
+              </div>
+              <span class="text-[10px] tracking-[0.22em] uppercase text-platinum/75 group-hover:text-gold transition">Shirts</span>
+            </button>
+
+            <button onclick="selectCategory('Pants', true)" class="group text-center">
+              <div class="w-11 h-11 mx-auto rounded-xl bg-charcoal/90 border border-white/10 group-hover:border-gold flex items-center justify-center text-gold transition mb-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 3h8l1.5 18h-4L12 10l-1.5 11h-4L8 3Z" />
+                </svg>
+              </div>
+              <span class="text-[10px] tracking-[0.22em] uppercase text-platinum/75 group-hover:text-gold transition">Pants</span>
+            </button>
+
+            <button onclick="selectCategory('Jackets', true)" class="group text-center">
+              <div class="w-11 h-11 mx-auto rounded-xl bg-charcoal/90 border border-white/10 group-hover:border-gold flex items-center justify-center text-gold transition mb-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 4 3 8v11h4v-7m10-8 3 4v11h-4v-7M6 4h12M9 4l3 5 3-5" />
+                </svg>
+              </div>
+              <span class="text-[10px] tracking-[0.22em] uppercase text-platinum/75 group-hover:text-gold transition">Jackets</span>
+            </button>
+
+            <button onclick="selectCategory('T-Shirts', true)" class="group text-center">
+              <div class="w-11 h-11 mx-auto rounded-xl bg-charcoal/90 border border-white/10 group-hover:border-gold flex items-center justify-center text-gold transition mb-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 4h8l5 4-2.5 3.5L16 10v10H8V10l-2.5 1.5L3 8l5-4Z" />
+                </svg>
+              </div>
+              <span class="text-[10px] tracking-[0.22em] uppercase text-platinum/75 group-hover:text-gold transition">T-Shirts</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Signature VULKRO Brand Crest Card -->
+        <div class="lg:col-span-5 hidden sm:flex justify-center">
+          <div class="relative w-full max-w-md p-8 sm:p-10 rounded-3xl bg-charcoal/85 backdrop-blur-xl border gold-border-subtle shadow-gold-glow text-center">
+            <div class="w-32 h-28 mx-auto mb-4">
+              <svg viewBox="0 0 120 110" class="w-full h-full drop-shadow-[0_6px_18px_rgba(212,175,55,0.32)]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 22H39L58 84L49 98L23 32L18 22Z" fill="url(#silverLeft)"/>
+                <path d="M102 22H81L54 98H67L97 32L102 22Z" fill="url(#goldRight)"/>
+                <path d="M60 22V17.5C60 13.5 56.8 10 53 10C49.5 10 47 12.6 47 15.8" stroke="url(#hangerGold)" stroke-width="3.6" stroke-linecap="round"/>
+                <path d="M14 55C23 41 44 33 60 23C76 33 97 41 106 55C93 46 75 40 60 32C45 40 27 46 14 55Z" fill="url(#hangerGold)"/>
+                <path d="M47 43L60 54L73 43" stroke="#E5C158" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="60" cy="64" r="3.5" fill="#E5C158"/>
+              </svg>
+            </div>
+            <div class="font-display font-bold text-3xl sm:text-4xl tracking-[0.18em] silver-gradient-text">
+              VULK<span class="gold-gradient-text">R</span>O<span class="text-xs align-top text-platinum/60 ml-1">TM</span>
+            </div>
+            <div class="flex items-center justify-center gap-3 my-2">
+              <span class="h-[1px] w-10 bg-gold/60"></span>
+              <span class="text-[11px] tracking-[0.42em] text-platinum/90 uppercase">MENS WEAR</span>
+              <span class="h-[1px] w-10 bg-gold/60"></span>
+            </div>
+            <p class="font-script text-3xl text-gold-light mt-1">Style Beyond Limits</p>
+            <div class="mt-6 pt-5 border-t border-white/10 flex items-center justify-around text-[11px] uppercase tracking-widest text-platinum/70">
+              <span>Premium Fabrics</span>
+              <span class="text-gold">&bull;</span>
+              <span>7-Day Exchange</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Storefront Catalog Section -->
+  <main id="collection" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+    
+    <!-- Header, Category Pills & Sort Control -->
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+      <div>
+        <span class="text-xs uppercase tracking-[0.28em] text-gold font-semibold">Curated Menswear</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mt-1.5">THE VULKRO COLLECTION</h2>
+      </div>
+
+      <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+        <!-- Category Filter Pills -->
+        <div id="category-tabs-container" class="flex flex-wrap items-center gap-2" role="tablist" aria-label="Filter Menswear Categories">
+          <!-- Populated dynamically with live product counts -->
+        </div>
+
+        <!-- Sort Dropdown -->
+        <select
+          id="sort-select"
+          onchange="handleSortChange(this.value)"
+          aria-label="Sort products"
+          class="px-4 py-2.5 rounded-xl bg-charcoal border border-white/15 focus:border-gold text-xs uppercase tracking-wider text-platinum focus:outline-none"
+        >
+          <option value="featured">Sort: Featured</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Product Grid -->
+    <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+      <!-- Dynamically populated via JS -->
+    </div>
+
+    <!-- Empty Search State -->
+    <div id="empty-state" class="hidden text-center py-20 bg-charcoal/50 rounded-2xl border border-white/10">
+      <p class="font-display text-xl text-gold mb-2">No Pieces Found</p>
+      <p class="text-sm text-platinum/65 mb-6">Try clearing your search or switching categories.</p>
+      <button onclick="resetFilters()" class="px-6 py-3 rounded-xl bg-gold text-obsidian text-xs uppercase tracking-widest font-bold">
+        View Full Collection
+      </button>
+    </div>
+  </main>
+
+  <!-- Brand Pillars Strip -->
+  <section class="bg-charcoal border-y gold-border-subtle py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-2xl bg-obsidian/75 border border-white/5 hover:border-gold/40 transition">
+          <div class="w-11 h-11 rounded-xl bg-gold/10 border gold-border-subtle flex items-center justify-center text-gold mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" />
+            </svg>
+          </div>
+          <h3 class="font-display text-base font-semibold text-white tracking-wide mb-1.5">Premium Fabrics</h3>
+          <p class="text-xs sm:text-sm text-platinum/70 leading-relaxed">
+            Long-staple cotton sateen, 280GSM Supima knits, and structured suiting blends engineered for rich drape and breathability.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-obsidian/75 border border-white/5 hover:border-gold/40 transition">
+          <div class="w-11 h-11 rounded-xl bg-gold/10 border gold-border-subtle flex items-center justify-center text-gold mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+            </svg>
+          </div>
+          <h3 class="font-display text-base font-semibold text-white tracking-wide mb-1.5">Express India Shipping</h3>
+          <p class="text-xs sm:text-sm text-platinum/70 leading-relaxed">
+            Fast doorstep dispatch across Tamil Nadu and all major Indian cities in signature matte-black garment packaging.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-obsidian/75 border border-white/5 hover:border-gold/40 transition">
+          <div class="w-11 h-11 rounded-xl bg-gold/10 border gold-border-subtle flex items-center justify-center text-gold mb-4">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </svg>
+          </div>
+          <h3 class="font-display text-base font-semibold text-white tracking-wide mb-1.5">Easy 7-Day Exchange</h3>
+          <p class="text-xs sm:text-sm text-platinum/70 leading-relaxed">
+            Seamless size exchange within 7 days of delivery plus direct WhatsApp styling & sizing support.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dark Luxury Footer -->
+  <footer class="bg-obsidian pt-16 pb-10 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-14 border-b border-white/10">
+        
+        <!-- Brand Column -->
+        <div>
+          <span class="font-display font-bold text-2xl tracking-[0.18em] silver-gradient-text">
+            VULK<span class="gold-gradient-text">R</span>O
+          </span>
+          <p class="font-script text-2xl text-gold-light mt-2 mb-3">Style Beyond Limits</p>
+          <p class="text-xs text-platinum/65 leading-relaxed mb-5">
+            Modern luxury menswear crafted for distinction. Elevated essentials across Shirts, Pants, Jackets, and T-Shirts.
+          </p>
+          <button onclick="openAdminDrawer()" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-charcoal border gold-border-subtle hover:border-gold text-xs text-gold font-semibold uppercase tracking-wider transition">
+            <span>⚙ Store Owner Panel</span>
+          </button>
+        </div>
+
+        <!-- Collections Links -->
+        <div>
+          <h4 class="font-display text-xs uppercase tracking-[0.25em] text-gold font-semibold mb-5">Collections</h4>
+          <ul class="space-y-3 text-sm text-platinum/70">
+            <li><button onclick="selectCategory('Shirts', true)" class="hover:text-gold transition">Tailored Shirts</button></li>
+            <li><button onclick="selectCategory('Pants', true)" class="hover:text-gold transition">Structured Pants</button></li>
+            <li><button onclick="selectCategory('Jackets', true)" class="hover:text-gold transition">Signature Jackets</button></li>
+            <li><button onclick="selectCategory('T-Shirts', true)" class="hover:text-gold transition">Heavyweight T-Shirts</button></li>
+          </ul>
+        </div>
+
+        <!-- Dynamic Store Contact & Location -->
+        <div>
+          <h4 class="font-display text-xs uppercase tracking-[0.25em] text-gold font-semibold mb-5">Store & Concierge</h4>
+          <ul class="space-y-3 text-sm text-platinum/70">
+            <li id="footer-location">Chennai, Tamil Nadu, India</li>
+            <li>Mon – Sun: 10:30 AM – 9:30 PM</li>
+            <li>WhatsApp: <span id="footer-whatsapp" class="text-platinum font-medium">+91 98765 43210</span></li>
+            <li>Instagram: <span id="footer-instagram" class="text-gold">@vulkromenswear</span></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <h4 class="font-display text-xs uppercase tracking-[0.25em] text-gold font-semibold mb-5">VIP Drop Alerts</h4>
+          <p class="text-xs text-platinum/65 leading-relaxed mb-4">
+            Get notified when new limited-edition menswear drops go live.
+          </p>
+          <form onsubmit="handleNewsletter(event)" class="space-y-2.5">
+            <input
+              type="email"
+              required
+              placeholder="Enter your email"
+              class="w-full px-4 py-3 rounded-xl bg-charcoal border border-white/10 focus:border-gold text-sm text-platinum placeholder:text-platinum/40 focus:outline-none"
+            />
+            <button type="submit" class="w-full py-3 rounded-xl bg-gold hover:bg-gold-light text-obsidian font-bold text-xs uppercase tracking-[0.2em] transition">
+              Join Inner Circle
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-platinum/50">
+        <p>&copy; 2026 VULKRO Mens Wear™. All Rights Reserved.</p>
+        <div class="flex items-center gap-6">
+          <span>7-Day Size Exchange</span>
+          <span>Secure WhatsApp Checkout</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================= -->
+  <!-- PRODUCT QUICK-VIEW MODAL WITH SIZE CHART                  -->
+  <!-- ========================================================= -->
+  <div id="quick-view-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+    <div class="relative w-full max-w-4xl bg-charcoal border gold-border-subtle rounded-2xl overflow-hidden shadow-2xl max-h-[90vh] flex flex-col md:flex-row">
+      <button onclick="closeQuickView()" aria-label="Close Quick View" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-obsidian/85 border border-white/15 text-platinum hover:text-gold hover:border-gold flex items-center justify-center transition">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- Left Image -->
+      <div class="md:w-1/2 bg-obsidian relative min-h-[260px] sm:min-h-[380px]">
+        <img id="qv-image" src="" alt="" class="w-full h-full object-cover" />
+        <span id="qv-badge" class="absolute top-4 left-4 px-3 py-1 rounded-lg bg-obsidian/90 border gold-border-subtle text-[10px] uppercase tracking-widest text-gold font-semibold"></span>
+      </div>
+
+      <!-- Right Details -->
+      <div class="md:w-1/2 p-6 sm:p-8 overflow-y-auto flex flex-col justify-between">
+        <div>
+          <span id="qv-category" class="text-[11px] uppercase tracking-[0.25em] text-gold font-semibold"></span>
+          <h3 id="qv-title" class="font-display text-2xl sm:text-3xl font-bold text-white mt-1.5"></h3>
+          <div class="flex items-baseline gap-3 mt-2">
+            <p id="qv-price" class="text-xl font-bold text-gold-light"></p>
+            <p id="qv-original-price" class="text-sm text-platinum/45 line-through"></p>
+            <span id="qv-discount-pill" class="px-2 py-0.5 rounded bg-gold/15 text-gold text-[11px] font-semibold"></span>
+          </div>
+
+          <p id="qv-description" class="text-sm text-platinum/75 leading-relaxed mt-4"></p>
+
+          <!-- Fabric & Fit Specs -->
+          <div class="mt-5 p-4 rounded-xl bg-obsidian/75 border border-white/10 space-y-2 text-xs">
+            <div class="flex justify-between gap-4">
+              <span class="text-platinum/55">Fabric & Craft</span>
+              <span id="qv-fabric" class="text-platinum font-medium text-right"></span>
+            </div>
+            <div class="flex justify-between gap-4">
+              <span class="text-platinum/55">Fit Profile</span>
+              <span id="qv-fit" class="text-platinum font-medium text-right"></span>
+            </div>
+          </div>
+
+          <!-- Size Selector (S, M, L, XL, XXL) -->
+          <div class="mt-6">
+            <div class="flex items-center justify-between mb-2.5">
+              <span class="text-xs uppercase tracking-widest text-platinum/80 font-semibold">Select Size</span>
+              <button type="button" onclick="toggleSizeGuide()" class="text-xs text-gold hover:underline">Size Chart</button>
+            </div>
+            <div id="qv-sizes" class="grid grid-cols-5 gap-2">
+              <!-- Populated dynamically -->
+            </div>
+
+            <!-- Collapsible Indian Menswear Size Chart -->
+            <div id="qv-size-guide" class="hidden mt-3 p-3 rounded-xl bg-obsidian border gold-border-subtle text-[11px] text-platinum/80">
+              <div class="grid grid-cols-3 font-semibold text-gold pb-1 border-b border-white/10">
+                <span>Size</span><span>Chest (in)</span><span>Waist (in)</span>
+              </div>
+              <div class="grid grid-cols-3 py-1"><span>S</span><span>38"</span><span>30"</span></div>
+              <div class="grid grid-cols-3 py-1"><span>M</span><span>40"</span><span>32"</span></div>
+              <div class="grid grid-cols-3 py-1"><span>L</span><span>42"</span><span>34"</span></div>
+              <div class="grid grid-cols-3 py-1"><span>XL</span><span>44"</span><span>36"</span></div>
+              <div class="grid grid-cols-3 pt-1"><span>XXL</span><span>46"</span><span>38"</span></div>
+            </div>
+          </div>
+        </div>
+
+        <button id="qv-add-btn" class="mt-7 w-full py-4 rounded-xl bg-gradient-to-r from-gold-light via-gold to-gold-dark text-obsidian font-bold text-xs uppercase tracking-[0.2em] shadow-gold-btn hover:brightness-110 transition">
+          Add to Bag
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- SLIDE-OVER SHOPPING BAG & WHATSAPP CHECKOUT DRAWER        -->
+  <!-- ========================================================= -->
+  <div id="bag-overlay" class="fixed inset-0 z-50 hidden bg-black/75 backdrop-blur-sm transition-opacity">
+    <aside id="bag-drawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-charcoal border-l gold-border-subtle shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300">
+      
+      <!-- Drawer Header -->
+      <div class="p-5 sm:p-6 border-b border-white/10 flex items-center justify-between">
+        <div>
+          <h3 class="font-display text-lg font-bold tracking-wider text-white">SHOPPING BAG</h3>
+          <p id="bag-subtitle" class="text-xs text-platinum/60 mt-0.5">0 items selected</p>
+        </div>
+        <button id="close-bag-btn" aria-label="Close Shopping Bag" class="p-2 rounded-xl bg-obsidian border border-white/10 text-platinum hover:text-gold transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Scrollable Cart Items + Delivery Form -->
+      <div class="flex-1 overflow-y-auto p-5 sm:p-6 space-y-5">
+        <div id="bag-items-container" class="space-y-3.5">
+          <!-- Cart Items populated dynamically -->
+        </div>
+
+        <!-- Customer Delivery Details Form (Visible when cart has items) -->
+        <div id="bag-delivery-form" class="hidden pt-4 border-t border-white/10 space-y-3">
+          <h4 class="font-display text-xs uppercase tracking-[0.2em] text-gold font-semibold">Delivery Details</h4>
+          <input
+            type="text"
+            id="cust-name"
+            placeholder="Your Full Name *"
+            class="w-full px-3.5 py-2.5 rounded-xl bg-obsidian border border-white/15 focus:border-gold text-xs text-platinum placeholder:text-platinum/40 focus:outline-none"
+          />
+          <input
+            type="tel"
+            id="cust-phone"
+            placeholder="Mobile / WhatsApp Number *"
+            class="w-full px-3.5 py-2.5 rounded-xl bg-obsidian border border-white/15 focus:border-gold text-xs text-platinum placeholder:text-platinum/40 focus:outline-none"
+          />
+          <input
+            type="text"
+            id="cust-city"
+            placeholder="City, Area & Pincode (e.g., Anna Nagar, Chennai - 600040) *"
+            class="w-full px-3.5 py-2.5 rounded-xl bg-obsidian border border-white/15 focus:border-gold text-xs text-platinum placeholder:text-platinum/40 focus:outline-none"
+          />
+        </div>
+      </div>
+
+      <!-- Cart Footer: Promo Code + Breakdown + Order via WhatsApp -->
+      <div id="bag-footer" class="p-5 sm:p-6 bg-obsidian border-t border-white/10 space-y-3.5">
+        <!-- Promo Code Box -->
+        <div>
+          <div class="flex gap-2">
+            <input
+              type="text"
+              id="promo-input"
+              placeholder="Promo code (e.g. VULKRO10)"
+              class="flex-1 px-3.5 py-2 rounded-xl bg-charcoal border border-white/15 focus:border-gold text-xs uppercase tracking-wider text-platinum placeholder:normal-case placeholder:tracking-normal placeholder:text-platinum/40 focus:outline-none"
+            />
+            <button type="button" onclick="applyPromoCode()" class="px-4 py-2 rounded-xl bg-charcoal border gold-border-subtle hover:border-gold text-xs uppercase tracking-wider font-semibold text-gold transition">
+              Apply
+            </button>
+          </div>
+          <p id="promo-status" class="text-[11px] mt-1.5 hidden"></p>
+        </div>
+
+        <!-- Totals Breakdown -->
+        <div class="space-y-1.5 text-xs border-t border-white/10 pt-3">
+          <div class="flex justify-between text-platinum/75">
+            <span>Subtotal</span>
+            <span id="bag-subtotal">₹0</span>
+          </div>
+          <div id="discount-row" class="hidden justify-between text-gold-light">
+            <span id="discount-label">Promo Discount</span>
+            <span id="bag-discount">-₹0</span>
+          </div>
+          <div class="flex justify-between text-platinum/75">
+            <span>Delivery</span>
+            <span id="bag-shipping" class="text-gold font-medium">FREE</span>
+          </div>
+          <div class="flex justify-between text-base font-bold text-white pt-2 border-t border-white/10">
+            <span>Payable Total</span>
+            <span id="bag-total" class="text-gold-light">₹0</span>
+          </div>
+        </div>
+
+        <!-- Order via WhatsApp CTA + Copy Order Text Fallback -->
+        <div class="space-y-2 pt-1">
+          <button type="button" onclick="orderViaWhatsApp()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-gold-light via-gold to-gold-dark text-obsidian font-bold text-xs uppercase tracking-[0.18em] shadow-gold-btn hover:brightness-110 transition flex items-center justify-center gap-2">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+            <span>Order via WhatsApp</span>
+          </button>
+          <button type="button" onclick="copyOrderSummary()" class="w-full py-2.5 rounded-xl bg-charcoal border border-white/15 hover:border-gold text-[11px] uppercase tracking-widest text-platinum/80 hover:text-gold transition">
+            Copy Order Summary Text
+          </button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- BUILT-IN STORE ADMIN / MANAGE STORE DRAWER                -->
+  <!-- ========================================================= -->
+  <div id="admin-overlay" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm transition-opacity">
+    <aside id="admin-drawer" class="fixed top-0 right-0 h-full w-full max-w-xl bg-charcoal border-l gold-border-subtle shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300">
+      
+      <!-- Admin Header -->
+      <div class="p-5 sm:p-6 bg-obsidian border-b gold-border-subtle flex items-center justify-between">
+        <div>
+          <span class="text-[10px] uppercase tracking-[0.28em] text-gold font-semibold">VULKRO Owner Dashboard</span>
+          <h3 class="font-display text-lg sm:text-xl font-bold text-white mt-0.5">Manage Store & Catalog</h3>
+        </div>
+        <button onclick="closeAdminDrawer()" aria-label="Close Store Manager" class="p-2 rounded-xl bg-charcoal border border-white/10 text-platinum hover:text-gold transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Admin Navigation Tabs -->
+      <div class="px-5 pt-4 bg-obsidian border-b border-white/10 flex gap-2">
+        <button onclick="switchAdminTab('settings')" id="admin-tab-settings" class="px-4 py-2.5 rounded-t-xl text-xs uppercase tracking-wider font-bold bg-charcoal text-gold border-t border-x gold-border-subtle">
+          Store Settings
+        </button>
+        <button onclick="switchAdminTab('products')" id="admin-tab-products" class="px-4 py-2.5 rounded-t-xl text-xs uppercase tracking-wider font-medium text-platinum/65 hover:text-gold">
+          Products (<span id="admin-prod-count">8</span>)
+        </button>
+      </div>
+
+      <!-- Admin Content Body -->
+      <div class="flex-1 overflow-y-auto p-5 sm:p-6 space-y-6">
+        
+        <!-- TAB 1: STORE SETTINGS -->
+        <form id="admin-settings-panel" onsubmit="saveStoreSettings(event)" class="space-y-4">
+          <p class="text-xs text-platinum/70 leading-relaxed">
+            Update your WhatsApp order number, location, promo offer, and free shipping limit anytime. Changes save automatically in your browser.
+          </p>
+
+          <div>
+            <label class="block text-[11px] uppercase tracking-wider text-gold font-semibold mb-1.5">Store WhatsApp Number (with Country Code)</label>
+            <input id="admin-whatsapp" type="text" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl bg-obsidian border border-white/15 focus:border-gold text-sm text-platinum focus:outline-none" />
+            <p class="text-[11px] text-platinum/50 mt-1">Customer orders will open WhatsApp directly to this number.</p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-[11px] uppercase tracking-wider text-gold font-semibold mb-1.5">Store City / Location</label>
+              <input id="admin-location" type="text" required placeholder="Chennai, Tamil Nadu" class="w-full px-4 py-3 rounded-xl bg-obsidian border border-white/15 focus:border-gold text-sm text-platinum focus:outline-none" />
+            </div>
+            <div>
+              <label class="block text-[11px] uppercase tracking-wider text-gold font-semibold mb-1.5">Instagram Handle</label>
+              <input id="admin-instagram" type="text" required placeholder="@vulkromenswear" class="w-full px-4 py-3 rounded-xl bg-obsidian border border-white/15 focus:border-gold text-sm text-platinum focus:outline-none" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div>
+              <label class="block text-[11px] uppercase tracking-wider text-gold font-semibold mb-1.5">Promo Code</label>
+              <input id="admin-promo-code" type="text" required placeholder="VULKRO10" class="w-full px-4 py-3 rounded-xl bg-obsidian border border-white/15 focus:border-gold text-sm uppercase text-platinum focus:outline-none" />
+            </div>
+            <div>
+              <label class="block text-[11px] uppercase tracking-wider text-gold font-semibold mb-1.5">Discount (%)</label>
+              <input id="admin-promo-discount" type="number" min="0" max="90" required placeholder="10" class="w-full px-4 py-3 rounded-xl bg-obsidian border border-white/15 focus:border-gold text-sm text-platinum focus:outline-none" />
+            </div>
+            <div>
+              <label class="block text-[11px] uppercase tracking-wider text-gold font-semibold mb-1.5">Free Shipping Above (₹)</label>
+              <input id="admin-free-shipping" type="number" min="0" required placeholder="1499" class="w-full px-4 py-3 rounded-xl bg-obsidian border border-white/15 focus:border-gold text-sm text-platinum focus:outline-none" />
+            </div>
+          </div>
+
+          <div class="pt-3 flex flex-wrap gap-3">
+            <button type="submit" class="flex-1 py-3.5 px-5 rounded-xl bg-gradient-to-r from-gold-light via-gold to-gold-dark text-obsidian font-bold text-xs uppercase tracking-[0.2em] shadow-gold-btn hover:brightness-110 transition">
+              Save Store Settings
+            </button>
+          </div>
+        </form>
+
+        <!-- TAB 2: ADD / EDIT / DELETE PRODUCTS -->
+        <div id="admin-products-panel" class="hidden space-y-6">
+          
+          <!-- Add / Edit Product Form -->
+          <form id="admin-product-form" onsubmit="saveProductFromAdmin(event)" class="p-4 sm:p-5 rounded-2xl bg-obsidian border gold-border-subtle space-y-3.5">
+            <div class="flex items-center justify-between">
+              <h4 id="admin-form-heading" class="font-display text-sm font-bold text-gold uppercase tracking-wider">+ Add New Product</h4>
+              <button type="button" id="cancel-edit-prod-btn" onclick="resetProductForm()" class="hidden text-xs text-platinum/60 hover:text-gold">Cancel Edit</button>
+            </div>
+            <input type="hidden" id="edit-prod-id" value="" />
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-[11px] text-platinum/70 mb-1">Product Name *</label>
+                <input id="prod-name" type="text" required placeholder="e.g., Royal Black Linen Shirt" class="w-full px-3.5 py-2.5 rounded-xl bg-charcoal border border-white/15 focus:border-gold text-xs text-platinum focus:outline-none" />
+              </div>
+              <div>
+                <label class="block text-[11px] text-platinum/70 mb-1">Category *</label>
+                <select id="prod-category" class="w-full px-3.5 py-2.5 rounded-xl bg-charcoal border border-white/15 focus:border-gold text-xs text-platinum focus:outline-none">
+                  <option value="Shirts">Shirts</option>
+                  <option value="Pants">Pants</option>
+                  <option value="Jackets">Jackets</option>
+                  <option value="T-Shirts">T-Shirts</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-[11px] text-platinum/70 mb-1">Selling Price (₹) *</label>
+                <input id="prod-price" type="number" min="1" required placeholder="1999" class="w-full px-3.5 py-2.5 rounded-xl bg-charcoal border border-white/15 focus:border-gold text-xs text-platinum focus:outline-none" />
+              </div>
+              <div>
+                <label class="block text-[11px] text-platinum/70 mb-1">Original MRP (₹)</label>
+                <input id="prod-original-price" type="number" min="1" placeholder="2799" class="w-full px-3.5 py-2.5 rounded-xl bg-charcoal border border-white/15 focus:border-gold text-xs text-platinum focus:outline-none" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-[11px] text-platinum/70 mb-1">Fabric & Fit Details</label>
+              <input id="prod-fabric" type="text" placeholder="100% Pure Cotton • Slim Fit" class="w-full px-3.5 py-2.5 rounded-xl bg-charcoal border border-white/15 focus:border-gold text-xs text-platinum focus:outline-none" />
+            </div>
+
+            <div>
+              <label class="block text-[11px] text-platinum/70 mb-1">Product Image URL or Upload Photo from Phone/PC</label>
+              <input id="prod-image-url" type="text" placeholder="Paste image link or choose file below..." class="w-full px-3.5 py-2.5 rounded-xl bg-charcoal border border-white/15 focus:border-gold text-xs text-platinum focus:outline-none mb-2" />
+              <input id="prod-image-file" type="file" accept="image/*" onchange="handleLocalImageUpload(event)" class="block w-full text-xs text-platinum/70 file:mr-3 file:py-2 file:px-3.5 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-gold/20 file:text-gold hover:file:bg-gold/30 cursor-pointer" />
+            </div>
+
+            <button type="submit" id="save-prod-submit-btn" class="w-full py-3 rounded-xl bg-gold hover:bg-gold-light text-obsidian font-bold text-xs uppercase tracking-[0.18em] transition">
+              Add Product to Store
+            </button>
+          </form>
+
+          <!-- Manage Existing Products List -->
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <h4 class="font-display text-xs uppercase tracking-widest text-platinum/80 font-semibold">Current Catalog</h4>
+              <button type="button" onclick="resetCatalogToDefaults()" class="text-[11px] text-red-400 hover:underline">
+                Reset to Default Catalog
+              </button>
+            </div>
+            <div id="admin-product-list" class="space-y-2.5">
+              <!-- Populated dynamically -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Floating Notification Toast -->
+  <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 translate-y-3 transition-all duration-300">
+    <div class="px-5 py-3 rounded-xl bg-charcoal border border-gold text-xs sm:text-sm text-white shadow-2xl flex items-center gap-2.5">
+      <span class="w-2 h-2 rounded-full bg-gold"></span>
+      <span id="toast-message">Updated</span>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- COMPLETE STOREFRONT + ADMIN PERSISTENCE ENGINE            -->
+  <!-- ========================================================= -->
+  <script>
+    const STORAGE_KEYS = {
+      SETTINGS: 'vulkro_store_settings_v1',
+      PRODUCTS: 'vulkro_store_products_v1'
+    };
+
+    // Default Store Settings
+    const DEFAULT_SETTINGS = {
+      whatsapp: '+91 98765 43210',
+      location: 'Chennai, Tamil Nadu',
+      instagram: '@vulkromenswear',
+      promoCode: 'VULKRO10',
+      promoDiscount: 10,
+      freeShippingThreshold: 1499
+    };
+
+    // 8 Starter Luxury Menswear Products
+    const DEFAULT_PRODUCTS = [
+      {
+        id: 'vk-sh-01',
+        name: 'Obsidian Silk-Cotton Dress Shirt',
+        category: 'Shirts',
+        price: 1899,
+        originalPrice: 2699,
+        badge: 'Bestseller',
+        fabric: '100% Egyptian Cotton Sateen',
+        fit: 'Tailored Slim Fit',
+        image: 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=85',
+        description: 'A midnight-black formal shirt crafted from luminous long-staple cotton with concealed placket detailing and structured cuffs.'
+      },
+      {
+        id: 'vk-jk-01',
+        name: 'Sovereign Structured Suede Jacket',
+        category: 'Jackets',
+        price: 4499,
+        originalPrice: 5999,
+        badge: 'Signature Drop',
+        fabric: 'Brushed Micro-Suede & Satin Lining',
+        fit: 'Architectural Regular Fit',
+        image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85',
+        description: 'Engineered with sharp shoulder lines, antique gold-tone zipper hardware, and a breathable interior lining for evening layering.'
+      },
+      {
+        id: 'vk-pt-01',
+        name: 'Aurelius Pleated Tailored Trousers',
+        category: 'Pants',
+        price: 2299,
+        originalPrice: 3199,
+        badge: 'New Arrival',
+        fabric: 'Poly-Viscose Stretch Suiting Blend',
+        fit: 'Tapered Ankle Fit',
+        image: 'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=900&q=85',
+        description: 'Single-pleat dress trousers offering razor-sharp crease retention and all-day comfort from office hours to dinner.'
+      },
+      {
+        id: 'vk-ts-01',
+        name: 'Monolith 280GSM Supima Tee',
+        category: 'T-Shirts',
+        price: 1199,
+        originalPrice: 1699,
+        badge: 'Core Essential',
+        fabric: '280 GSM Heavyweight Supima Cotton',
+        fit: 'Structured Boxy Fit',
+        image: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=900&q=85',
+        description: 'Signature heavyweight jet-black crew neck featuring a dense ribbed collar that holds its structure wash after wash.'
+      },
+      {
+        id: 'vk-sh-02',
+        name: 'Champagne Textured Resort Shirt',
+        category: 'Shirts',
+        price: 1799,
+        originalPrice: 2499,
+        badge: 'Limited Drop',
+        fabric: 'Breathable Cotton-Linen Weave',
+        fit: 'Relaxed Cuban Collar',
+        image: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=900&q=85',
+        description: 'Subtle tonal texture paired with an effortless open collar—ideal for weekend getaways and smart-casual evenings.'
+      },
+      {
+        id: 'vk-jk-02',
+        name: 'Noir Tailored Bomber Overjacket',
+        category: 'Jackets',
+        price: 3899,
+        originalPrice: 4999,
+        badge: 'Trending',
+        fabric: 'Matte Twill Shell with Soft Lining',
+        fit: 'Modern Tailored Fit',
+        image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=900&q=85',
+        description: 'Minimalist matte-black silhouette finished with metallic hardware and clean welt pockets.'
+      },
+      {
+        id: 'vk-pt-02',
+        name: 'Vanguard Stretch Chino Pants',
+        category: 'Pants',
+        price: 1899,
+        originalPrice: 2599,
+        badge: 'Everyday Luxury',
+        fabric: '97% Peached Twill Cotton, 3% Lycra',
+        fit: 'Slim Tapered Fit',
+        image: 'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=900&q=85',
+        description: 'Softly brushed charcoal twill chinos with ergonomic 4-way stretch for effortless daily movement.'
+      },
+      {
+        id: 'vk-ts-02',
+        name: 'Imperial Mercerized Polo Tee',
+        category: 'T-Shirts',
+        price: 1499,
+        originalPrice: 2099,
+        badge: 'Bestseller',
+        fabric: 'Double-Mercerized Pima Cotton',
+        fit: 'Athletic Tailored Fit',
+        image: 'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=85',
+        description: 'Silk-like luster meets structured knit collar detailing for sharp smart-casual versatility.'
+      }
+    ];
+
+    // Load persisted data safely
+    function loadStoreSettings() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEYS.SETTINGS);
+        return raw ? { ...DEFAULT_SETTINGS, ...JSON.parse(raw) } : { ...DEFAULT_SETTINGS };
+      } catch (e) {
+        return { ...DEFAULT_SETTINGS };
+      }
+    }
+
+    function loadStoreProducts() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEYS.PRODUCTS);
+        const parsed = raw ? JSON.parse(raw) : null;
+        return Array.isArray(parsed) && parsed.length > 0 ? parsed : [...DEFAULT_PRODUCTS];
+      } catch (e) {
+        return [...DEFAULT_PRODUCTS];
+      }
+    }
+
+    // Active State
+    let storeSettings = loadStoreSettings();
+    let products = loadStoreProducts();
+    let activeCategory = 'All';
+    let searchQuery = '';
+    let sortBy = 'featured';
+    let selectedSizes = {};
+    let cart = [];
+    let promoApplied = false;
+    let currentQuickViewProduct = null;
+    let qvSelectedSize = 'M';
+
+    products.forEach(p => {
+      selectedSizes[p.id] = 'M';
+    });
+
+    function formatINR(amount) {
+      return '₹' + Number(amount || 0).toLocaleString('en-IN');
+    }
+
+    function getDiscountPercent(price, originalPrice) {
+      if (!originalPrice || originalPrice <= price) return 0;
+      return Math.round(((originalPrice - price) / originalPrice) * 100);
+    }
+
+    // Sync UI with Store Settings
+    function applyStoreSettingsToUI() {
+      document.getElementById('top-threshold-text').textContent = formatINR(storeSettings.freeShippingThreshold);
+      document.getElementById('top-promo-text').textContent = storeSettings.promoCode;
+      document.getElementById('top-discount-text').textContent = `${storeSettings.promoDiscount}%`;
+      document.getElementById('hero-city-badge').textContent = storeSettings.location.split(',')[0].toUpperCase();
+      document.getElementById('footer-location').textContent = `${storeSettings.location}, India`;
+      document.getElementById('footer-whatsapp').textContent = storeSettings.whatsapp;
+      document.getElementById('footer-instagram').textContent = storeSettings.instagram;
+      document.getElementById('promo-input').placeholder = `Promo code (try ${storeSettings.promoCode})`;
+
+      // Sync Admin Form Fields
+      document.getElementById('admin-whatsapp').value = storeSettings.whatsapp;
+      document.getElementById('admin-location').value = storeSettings.location;
+      document.getElementById('admin-instagram').value = storeSettings.instagram;
+      document.getElementById('admin-promo-code').value = storeSettings.promoCode;
+      document.getElementById('admin-promo-discount').value = storeSettings.promoDiscount;
+      document.getElementById('admin-free-shipping').value = storeSettings.freeShippingThreshold;
+    }
+
+    // Render Category Pills with Live Counts
+    function renderCategoryTabs() {
+      const container = document.getElementById('category-tabs-container');
+      const categories = ['All', 'Shirts', 'Pants', 'Jackets', 'T-Shirts'];
+
+      container.innerHTML = categories.map(cat => {
+        const count = cat === 'All' ? products.length : products.filter(p => p.category === cat).length;
+        const isActive = activeCategory === cat;
+        return `
+          <button
+            type="button"
+            onclick="selectCategory('${cat}', false)"
+            class="px-4 py-2.5 rounded-xl text-xs uppercase tracking-[0.16em] transition ${
+              isActive
+                ? 'font-bold bg-gold text-obsidian'
+                : 'font-medium bg-charcoal text-platinum/80 border border-white/10 hover:border-gold/60'
+            }"
+          >
+            ${cat} (${count})
+          </button>
+        `;
+      }).join('');
+    }
+
+    // Render Product Grid
+    function renderProducts() {
+      renderCategoryTabs();
+      const grid = document.getElementById('product-grid');
+      const emptyState = document.getElementById('empty-state');
+
+      let filtered = products.filter(product => {
+        const matchesCat = activeCategory === 'All' || product.category === activeCategory;
+        const q = searchQuery.toLowerCase();
+        const matchesSearch =
+          product.name.toLowerCase().includes(q) ||
+          product.category.toLowerCase().includes(q) ||
+          (product.fabric || '').toLowerCase().includes(q);
+        return matchesCat && matchesSearch;
+      });
+
+      if (sortBy === 'price-asc') {
+        filtered = [...filtered].sort((a, b) => a.price - b.price);
+      } else if (sortBy === 'price-desc') {
+        filtered = [...filtered].sort((a, b) => b.price - a.price);
+      }
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+      grid.innerHTML = filtered.map(product => {
+        if (!selectedSizes[product.id]) selectedSizes[product.id] = 'M';
+        const currentSize = selectedSizes[product.id];
+        const disc = getDiscountPercent(product.price, product.originalPrice);
+
+        return `
+          <article class="product-card group bg-charcoal rounded-2xl border border-white/10 hover:border-gold/50 overflow-hidden flex flex-col justify-between transition duration-300 shadow-lg hover:shadow-gold-glow">
+            <div>
+              <div class="relative aspect-[4/5] bg-obsidian overflow-hidden cursor-pointer" onclick="openQuickView('${product.id}')">
+                <img
+                  src="${product.image}"
+                  onerror="this.onerror=null;this.src='https://placehold.co/600x750/141414/D4AF37?text=VULKRO';"
+                  alt="${product.name}"
+                  class="product-card-img w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent opacity-60 group-hover:opacity-80 transition"></div>
+                
+                <div class="absolute top-3 left-3 right-3 flex items-center justify-between gap-2">
+                  <span class="px-2.5 py-1 rounded-lg bg-obsidian/90 backdrop-blur-md border gold-border-subtle text-[10px] uppercase tracking-[0.16em] text-gold font-semibold">
+                    ${product.badge || 'VULKRO'}
+                  </span>
+                  ${disc > 0 ? `<span class="px-2 py-1 rounded-lg bg-gold text-obsidian text-[10px] font-bold">${disc}% OFF</span>` : ''}
+                </div>
+
+                <button
+                  type="button"
+                  onclick="event.stopPropagation(); openQuickView('${product.id}')"
+                  class="absolute bottom-3.5 right-3.5 px-3.5 py-2 rounded-xl bg-obsidian/90 hover:bg-gold text-platinum hover:text-obsidian border border-white/15 hover:border-gold text-[11px] uppercase tracking-wider font-semibold opacity-95 sm:opacity-0 sm:group-hover:opacity-100 transition duration-300"
+                >
+                  Quick View
+                </button>
+              </div>
+
+              <div class="p-5 pb-3">
+                <div class="flex items-center justify-between text-[11px] uppercase tracking-[0.2em] text-gold/90 font-medium">
+                  <span>${product.category}</span>
+                  <span class="text-platinum/50 truncate max-w-[120px]">${product.fit || 'Tailored Fit'}</span>
+                </div>
+                <h3 onclick="openQuickView('${product.id}')" class="font-display text-base sm:text-lg font-semibold text-white group-hover:text-gold-light transition mt-1.5 cursor-pointer line-clamp-1">
+                  ${product.name}
+                </h3>
+                <div class="flex items-baseline gap-2.5 mt-1.5">
+                  <span class="text-base font-bold text-platinum">${formatINR(product.price)}</span>
+                  ${product.originalPrice && product.originalPrice > product.price ? `<span class="text-xs text-platinum/45 line-through">${formatINR(product.originalPrice)}</span>` : ''}
+                </div>
+              </div>
+            </div>
+
+            <div class="p-5 pt-2 space-y-3">
+              <div class="flex items-center justify-between gap-1.5">
+                ${['S', 'M', 'L', 'XL'].map(size => `
+                  <button
+                    type="button"
+                    onclick="setCardSize('${product.id}', '${size}')"
+                    class="flex-1 py-1.5 rounded-lg text-xs font-semibold border transition ${
+                      currentSize === size
+                        ? 'bg-gold/15 border-gold text-gold'
+                        : 'bg-obsidian border-white/10 text-platinum/70 hover:border-white/30'
+                    }"
+                  >
+                    ${size}
+                  </button>
+                `).join('')}
+              </div>
+
+              <button
+                type="button"
+                onclick="addToCart('${product.id}', selectedSizes['${product.id}'])"
+                class="w-full py-3 rounded-xl bg-obsidian hover:bg-gold text-gold hover:text-obsidian border gold-border-subtle hover:border-gold text-xs uppercase tracking-[0.2em] font-bold transition duration-200"
+              >
+                Add to Bag
+              </button>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function setCardSize(productId, size) {
+      selectedSizes[productId] = size;
+      renderProducts();
+    }
+
+    function selectCategory(category, shouldScroll) {
+      activeCategory = category;
+
+      document.querySelectorAll('.nav-link').forEach(btn => {
+        const isMatch = btn.dataset.navCat === category;
+        btn.classList.toggle('text-gold', isMatch);
+        btn.classList.toggle('font-semibold', isMatch);
+        btn.classList.toggle('border-gold', isMatch);
+        btn.classList.toggle('text-platinum/75', !isMatch);
+        btn.classList.toggle('border-transparent', !isMatch);
+      });
+
+      renderProducts();
+
+      if (shouldScroll) {
+        document.getElementById('collection').scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function handleSortChange(val) {
+      sortBy = val;
+      renderProducts();
+    }
+
+    function resetFilters() {
+      activeCategory = 'All';
+      searchQuery = '';
+      sortBy = 'featured';
+      document.getElementById('search-input').value = '';
+      document.getElementById('sort-select').value = 'featured';
+      document.getElementById('clear-search-btn').classList.add('hidden');
+      selectCategory('All', false);
+    }
+
+    // Mobile Nav
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileNavDrawer = document.getElementById('mobile-nav-drawer');
+    function toggleMobileMenu(forceState) {
+      const isHidden = mobileNavDrawer.classList.contains('hidden');
+      const nextState = typeof forceState === 'boolean' ? forceState : isHidden;
+      mobileNavDrawer.classList.toggle('hidden', !nextState);
+    }
+    mobileMenuBtn.addEventListener('click', () => toggleMobileMenu());
+
+    // Search Bar
+    const searchToggleBtn = document.getElementById('search-toggle-btn');
+    const searchBarContainer = document.getElementById('search-bar-container');
+    const searchInput = document.getElementById('search-input');
+    const clearSearchBtn = document.getElementById('clear-search-btn');
+
+    searchToggleBtn.addEventListener('click', () => {
+      searchBarContainer.classList.toggle('hidden');
+      if (!searchBarContainer.classList.contains('hidden')) searchInput.focus();
+    });
+
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value;
+      clearSearchBtn.classList.toggle('hidden', searchQuery.length === 0);
+      renderProducts();
+    });
+
+    clearSearchBtn.addEventListener('click', () => {
+      searchQuery = '';
+      searchInput.value = '';
+      clearSearchBtn.classList.add('hidden');
+      renderProducts();
+    });
+
+    // Quick-View Modal
+    function openQuickView(productId) {
+      const product = products.find(p => p.id === productId);
+      if (!product) return;
+
+      currentQuickViewProduct = product;
+      qvSelectedSize = selectedSizes[product.id] || 'M';
+      const disc = getDiscountPercent(product.price, product.originalPrice);
+
+      document.getElementById('qv-image').src = product.image;
+      document.getElementById('qv-image').alt = product.name;
+      document.getElementById('qv-badge').textContent = product.badge || 'VULKRO';
+      document.getElementById('qv-category').textContent = `VULKRO ${product.category}`;
+      document.getElementById('qv-title').textContent = product.name;
+      document.getElementById('qv-price').textContent = formatINR(product.price);
+
+      const origEl = document.getElementById('qv-original-price');
+      const discPill = document.getElementById('qv-discount-pill');
+      if (disc > 0) {
+        origEl.textContent = formatINR(product.originalPrice);
+        discPill.textContent = `Save ${disc}%`;
+        discPill.classList.remove('hidden');
+      } else {
+        origEl.textContent = '';
+        discPill.classList.add('hidden');
+      }
+
+      document.getElementById('qv-description').textContent = product.description || 'Crafted with precision tailoring and breathable luxury fabric for an effortless sharp silhouette.';
+      document.getElementById('qv-fabric').textContent = product.fabric || 'Premium Woven Cotton Blend';
+      document.getElementById('qv-fit').textContent = product.fit || 'Tailored Modern Fit';
+      document.getElementById('qv-size-guide').classList.add('hidden');
+
+      renderQuickViewSizes();
+
+      document.getElementById('qv-add-btn').onclick = () => {
+        addToCart(product.id, qvSelectedSize);
+        closeQuickView();
+      };
+
+      const modal = document.getElementById('quick-view-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function renderQuickViewSizes() {
+      const container = document.getElementById('qv-sizes');
+      container.innerHTML = ['S', 'M', 'L', 'XL', 'XXL'].map(size => `
+        <button
+          type="button"
+          onclick="selectQuickViewSize('${size}')"
+          class="py-2.5 rounded-xl text-xs font-bold border transition ${
+            qvSelectedSize === size
+              ? 'bg-gold text-obsidian border-gold'
+              : 'bg-obsidian text-platinum/80 border-white/15 hover:border-gold'
+          }"
+        >
+          ${size}
+        </button>
+      `).join('');
+    }
+
+    function selectQuickViewSize(size) {
+      qvSelectedSize = size;
+      if (currentQuickViewProduct && ['S', 'M', 'L', 'XL'].includes(size)) {
+        selectedSizes[currentQuickViewProduct.id] = size;
+        renderProducts();
+      }
+      renderQuickViewSizes();
+    }
+
+    function toggleSizeGuide() {
+      document.getElementById('qv-size-guide').classList.toggle('hidden');
+    }
+
+    function closeQuickView() {
+      const modal = document.getElementById('quick-view-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Shopping Bag & Cart Logic
+    function addToCart(productId, size = 'M') {
+      const product = products.find(p => p.id === productId);
+      if (!product) return;
+
+      const existing = cart.find(item => item.id === productId && item.size === size);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({
+          id: product.id,
+          name: product.name,
+          price: product.price,
+          size: size,
+          qty: 1,
+          image: product.image
+        });
+      }
+
+      updateBagUI();
+      showToast(`${product.name} (${size}) added to bag`);
+    }
+
+    function updateItemQty(index, delta) {
+      if (!cart[index]) return;
+      cart[index].qty += delta;
+      if (cart[index].qty <= 0) cart.splice(index, 1);
+      updateBagUI();
+    }
+
+    function removeItem(index) {
+      cart.splice(index, 1);
+      updateBagUI();
+    }
+
+    function applyPromoCode() {
+      const input = document.getElementById('promo-input').value.trim().toUpperCase();
+      const status = document.getElementById('promo-status');
+      status.classList.remove('hidden');
+
+      if (input === storeSettings.promoCode.toUpperCase() && storeSettings.promoDiscount > 0) {
+        promoApplied = true;
+        status.textContent = `✓ ${storeSettings.promoCode.toUpperCase()} applied — ${storeSettings.promoDiscount}% off unlocked!`;
+        status.className = 'text-[11px] mt-1.5 text-gold-light';
+      } else {
+        promoApplied = false;
+        status.textContent = `Invalid code. Try ${storeSettings.promoCode.toUpperCase()} for ${storeSettings.promoDiscount}% off.`;
+        status.className = 'text-[11px] mt-1.5 text-red-400';
+      }
+      updateBagUI();
+    }
+
+    function calculateTotals() {
+      const subtotal = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+      const discount = promoApplied ? Math.round(subtotal * (storeSettings.promoDiscount / 100)) : 0;
+      const afterDiscount = Math.max(0, subtotal - discount);
+      const shipping = afterDiscount >= storeSettings.freeShippingThreshold || afterDiscount === 0 ? 0 : 99;
+      const total = afterDiscount + shipping;
+      return { subtotal, discount, shipping, total };
+    }
+
+    function updateBagUI() {
+      const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
+      document.getElementById('bag-count-badge').textContent = totalCount;
+      document.getElementById('bag-subtitle').textContent = `${totalCount} ${totalCount === 1 ? 'item' : 'items'} selected`;
+
+      const container = document.getElementById('bag-items-container');
+      const footer = document.getElementById('bag-footer');
+      const deliveryForm = document.getElementById('bag-delivery-form');
+
+      if (cart.length === 0) {
+        footer.classList.add('hidden');
+        deliveryForm.classList.add('hidden');
+        container.innerHTML = `
+          <div class="flex flex-col items-center justify-center text-center py-14">
+            <div class="w-16 h-16 rounded-2xl bg-obsidian border gold-border-subtle flex items-center justify-center text-gold mb-4">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007Z" />
+              </svg>
+            </div>
+            <p class="font-display text-base text-white">Your Bag is Empty</p>
+            <p class="text-xs text-platinum/60 max-w-xs mt-1.5 mb-6">Add shirts, pants, jackets, or tees to place your order directly via WhatsApp.</p>
+            <button onclick="closeBagDrawer()" class="px-6 py-3 rounded-xl bg-gold text-obsidian text-xs uppercase tracking-widest font-bold">
+              Explore Collection
+            </button>
+          </div>
+        `;
+        return;
+      }
+
+      footer.classList.remove('hidden');
+      deliveryForm.classList.remove('hidden');
+
+      container.innerHTML = cart.map((item, idx) => `
+        <div class="flex gap-3.5 p-3 rounded-2xl bg-obsidian border border-white/10">
+          <img src="${item.image}" alt="${item.name}" class="w-18 h-22 w-[72px] h-[88px] object-cover rounded-xl bg-charcoal shrink-0" />
+          <div class="flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-start justify-between gap-2">
+                <h4 class="font-display text-xs sm:text-sm font-semibold text-white leading-snug">${item.name}</h4>
+                <button onclick="removeItem(${idx})" aria-label="Remove item" class="text-platinum/45 hover:text-red-400 transition">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <p class="text-[11px] text-gold mt-0.5">Size: <span class="font-semibold">${item.size}</span></p>
+            </div>
+
+            <div class="flex items-center justify-between mt-2.5">
+              <div class="inline-flex items-center rounded-lg bg-charcoal border border-white/10">
+                <button onclick="updateItemQty(${idx}, -1)" class="px-2.5 py-1 text-xs text-platinum hover:text-gold">-</button>
+                <span class="px-2.5 py-1 text-xs font-semibold text-white">${item.qty}</span>
+                <button onclick="updateItemQty(${idx}, 1)" class="px-2.5 py-1 text-xs text-platinum hover:text-gold">+</button>
+              </div>
+              <span class="text-sm font-bold text-platinum">${formatINR(item.price * item.qty)}</span>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      const { subtotal, discount, shipping, total } = calculateTotals();
+      document.getElementById('bag-subtotal').textContent = formatINR(subtotal);
+      document.getElementById('bag-shipping').textContent = shipping === 0 ? 'FREE' : formatINR(shipping);
+      document.getElementById('bag-total').textContent = formatINR(total);
+
+      const discountRow = document.getElementById('discount-row');
+      if (promoApplied && discount > 0) {
+        discountRow.classList.remove('hidden');
+        discountRow.classList.add('flex');
+        document.getElementById('discount-label').textContent = `Discount (${storeSettings.promoCode.toUpperCase()} - ${storeSettings.promoDiscount}%)`;
+        document.getElementById('bag-discount').textContent = `-${formatINR(discount)}`;
+      } else {
+        discountRow.classList.add('hidden');
+        discountRow.classList.remove('flex');
+      }
+    }
+
+    // Generate Formatted WhatsApp Order Text
+    function buildWhatsAppOrderText() {
+      const { subtotal, discount, shipping, total } = calculateTotals();
+      const name = document.getElementById('cust-name').value.trim() || 'Guest Customer';
+      const phone = document.getElementById('cust-phone').value.trim() || 'Not provided';
+      const city = document.getElementById('cust-city').value.trim() || 'Not provided';
+
+      const itemLines = cart
+        .map((item, i) => `${i + 1}. ${item.name} (Size: ${item.size}) x${item.qty} = ${formatINR(item.price * item.qty)}`)
+        .join('\n');
+
+      return [
+        `*VULKRO MENS WEAR — NEW ORDER*`,
+        `─────────────────────────`,
+        itemLines,
+        `─────────────────────────`,
+        `Subtotal: ${formatINR(subtotal)}`,
+        promoApplied && discount > 0 ? `Promo (${storeSettings.promoCode.toUpperCase()}): -${formatINR(discount)}` : null,
+        `Delivery: ${shipping === 0 ? 'FREE' : formatINR(shipping)}`,
+        `*Total Payable: ${formatINR(total)}*`,
+        ``,
+        `*Customer Details:*`,
+        `Name: ${name}`,
+        `Phone: ${phone}`,
+        `Address: ${city}`
+      ].filter(Boolean).join('\n');
+    }
+
+    function orderViaWhatsApp() {
+      if (cart.length === 0) return;
+
+      const name = document.getElementById('cust-name').value.trim();
+      const phone = document.getElementById('cust-phone').value.trim();
+      const city = document.getElementById('cust-city').value.trim();
+
+      if (!name || !phone || !city) {
+        showToast('Please fill Name, Phone & Delivery Address above');
+        document.getElementById('cust-name').focus();
+        return;
+      }
+
+      const cleanDigits = storeSettings.whatsapp.replace(/\D/g, '');
+      const waNumber = cleanDigits.length === 10 ? `91${cleanDigits}` : cleanDigits;
+      const message = encodeURIComponent(buildWhatsAppOrderText());
+      const waUrl = `https://wa.me/${waNumber}?text=${message}`;
+
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
+      showToast('Opening WhatsApp with your VULKRO order...');
+    }
+
+    function copyOrderSummary() {
+      if (cart.length === 0) return;
+      const text = buildWhatsAppOrderText();
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      showToast('Order summary copied to clipboard!');
+    }
+
+    // Bag Drawer Controls
+    const bagOverlay = document.getElementById('bag-overlay');
+    const bagDrawer = document.getElementById('bag-drawer');
+
+    function openBagDrawer() {
+      bagOverlay.classList.remove('hidden');
+      requestAnimationFrame(() => bagDrawer.classList.remove('translate-x-full'));
+    }
+
+    function closeBagDrawer() {
+      bagDrawer.classList.add('translate-x-full');
+      setTimeout(() => bagOverlay.classList.add('hidden'), 280);
+    }
+
+    document.getElementById('open-bag-btn').addEventListener('click', openBagDrawer);
+    document.getElementById('close-bag-btn').addEventListener('click', closeBagDrawer);
+    bagOverlay.addEventListener('click', (e) => {
+      if (e.target === bagOverlay) closeBagDrawer();
+    });
+
+    // =========================================================
+    // STORE OWNER ADMIN DRAWER LOGIC (localStorage Persistence)
+    // =========================================================
+    const adminOverlay = document.getElementById('admin-overlay');
+    const adminDrawer = document.getElementById('admin-drawer');
+
+    function openAdminDrawer() {
+      applyStoreSettingsToUI();
+      renderAdminProductList();
+      adminOverlay.classList.remove('hidden');
+      requestAnimationFrame(() => adminDrawer.classList.remove('translate-x-full'));
+    }
+
+    function closeAdminDrawer() {
+      adminDrawer.classList.add('translate-x-full');
+      setTimeout(() => adminOverlay.classList.add('hidden'), 280);
+    }
+
+    adminOverlay.addEventListener('click', (e) => {
+      if (e.target === adminOverlay) closeAdminDrawer();
+    });
+
+    function switchAdminTab(tab) {
+      const settingsPanel = document.getElementById('admin-settings-panel');
+      const productsPanel = document.getElementById('admin-products-panel');
+      const settingsTab = document.getElementById('admin-tab-settings');
+      const productsTab = document.getElementById('admin-tab-products');
+
+      if (tab === 'settings') {
+        settingsPanel.classList.remove('hidden');
+        productsPanel.classList.add('hidden');
+        settingsTab.className = 'px-4 py-2.5 rounded-t-xl text-xs uppercase tracking-wider font-bold bg-charcoal text-gold border-t border-x gold-border-subtle';
+        productsTab.className = 'px-4 py-2.5 rounded-t-xl text-xs uppercase tracking-wider font-medium text-platinum/65 hover:text-gold';
+      } else {
+        settingsPanel.classList.add('hidden');
+        productsPanel.classList.remove('hidden');
+        productsTab.className = 'px-4 py-2.5 rounded-t-xl text-xs uppercase tracking-wider font-bold bg-charcoal text-gold border-t border-x gold-border-subtle';
+        settingsTab.className = 'px-4 py-2.5 rounded-t-xl text-xs uppercase tracking-wider font-medium text-platinum/65 hover:text-gold';
+        renderAdminProductList();
+      }
+    }
+
+    function saveStoreSettings(event) {
+      event.preventDefault();
+      storeSettings = {
+        whatsapp: document.getElementById('admin-whatsapp').value.trim() || DEFAULT_SETTINGS.whatsapp,
+        location: document.getElementById('admin-location').value.trim() || DEFAULT_SETTINGS.location,
+        instagram: document.getElementById('admin-instagram').value.trim() || DEFAULT_SETTINGS.instagram,
+        promoCode: (document.getElementById('admin-promo-code').value.trim() || DEFAULT_SETTINGS.promoCode).toUpperCase(),
+        promoDiscount: Math.max(0, Number(document.getElementById('admin-promo-discount').value) || 0),
+        freeShippingThreshold: Math.max(0, Number(document.getElementById('admin-free-shipping').value) || 0)
+      };
+
+      localStorage.setItem(STORAGE_KEYS.SETTINGS, JSON.stringify(storeSettings));
+      applyStoreSettingsToUI();
+      updateBagUI();
+      showToast('Store settings saved & updated live!');
+    }
+
+    // Handle local image upload via FileReader
+    function handleLocalImageUpload(event) {
+      const file = event.target.files?.[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        document.getElementById('prod-image-url').value = e.target.result;
+        showToast('Photo loaded! Click Save Product to publish.');
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function renderAdminProductList() {
+      document.getElementById('admin-prod-count').textContent = products.length;
+      const list = document.getElementById('admin-product-list');
+
+      list.innerHTML = products.map(prod => `
+        <div class="flex items-center justify-between gap-3 p-3 rounded-xl bg-obsidian border border-white/10">
+          <div class="flex items-center gap-3 min-w-0">
+            <img src="${prod.image}" alt="${prod.name}" class="w-12 h-14 object-cover rounded-lg bg-charcoal shrink-0" />
+            <div class="min-w-0">
+              <p class="text-xs font-bold text-white truncate">${prod.name}</p>
+              <p class="text-[11px] text-gold">${prod.category} &bull; ${formatINR(prod.price)}</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-1.5 shrink-0">
+            <button type="button" onclick="editProductInAdmin('${prod.id}')" class="px-2.5 py-1.5 rounded-lg bg-charcoal border border-white/15 hover:border-gold text-[11px] text-platinum hover:text-gold transition">
+              Edit
+            </button>
+            <button type="button" onclick="deleteProductFromAdmin('${prod.id}')" class="px-2.5 py-1.5 rounded-lg bg-charcoal border border-white/15 hover:border-red-400 text-[11px] text-red-400 transition">
+              Delete
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function editProductInAdmin(productId) {
+      const prod = products.find(p => p.id === productId);
+      if (!prod) return;
+
+      document.getElementById('edit-prod-id').value = prod.id;
+      document.getElementById('prod-name').value = prod.name;
+      document.getElementById('prod-category').value = prod.category;
+      document.getElementById('prod-price').value = prod.price;
+      document.getElementById('prod-original-price').value = prod.originalPrice || '';
+      document.getElementById('prod-fabric').value = prod.fabric || '';
+      document.getElementById('prod-image-url').value = prod.image || '';
+
+      document.getElementById('admin-form-heading').textContent = '✎ Edit Product';
+      document.getElementById('save-prod-submit-btn').textContent = 'Update Product';
+      document.getElementById('cancel-edit-prod-btn').classList.remove('hidden');
+      document.getElementById('admin-product-form').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function resetProductForm() {
+      document.getElementById('edit-prod-id').value = '';
+      document.getElementById('admin-product-form').reset();
+      document.getElementById('admin-form-heading').textContent = '+ Add New Product';
+      document.getElementById('save-prod-submit-btn').textContent = 'Add Product to Store';
+      document.getElementById('cancel-edit-prod-btn').classList.add('hidden');
+    }
+
+    function saveProductFromAdmin(event) {
+      event.preventDefault();
+      const editId = document.getElementById('edit-prod-id').value;
+      const name = document.getElementById('prod-name').value.trim();
+      const category = document.getElementById('prod-category').value;
+      const price = Math.max(1, Number(document.getElementById('prod-price').value));
+      const origRaw = Number(document.getElementById('prod-original-price').value);
+      const originalPrice = origRaw > price ? origRaw : null;
+      const fabric = document.getElementById('prod-fabric').value.trim() || 'Premium Woven Cotton';
+      const image = document.getElementById('prod-image-url').value.trim() || 'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=900&q=85';
+
+      if (editId) {
+        const idx = products.findIndex(p => p.id === editId);
+        if (idx !== -1) {
+          products[idx] = {
+            ...products[idx],
+            name,
+            category,
+            price,
+            originalPrice,
+            fabric,
+            image
+          };
+        }
+        showToast('Product updated!');
+      } else {
+        const newProd = {
+          id: 'vk-' + Date.now(),
+          name,
+          category,
+          price,
+          originalPrice,
+          badge: 'New Drop',
+          fabric,
+          fit: 'Tailored Fit',
+          image,
+          description: `Crafted in ${fabric} with signature VULKRO attention to detail.`
+        };
+        products.unshift(newProd);
+        selectedSizes[newProd.id] = 'M';
+        showToast('New product added to your store!');
+      }
+
+      localStorage.setItem(STORAGE_KEYS.PRODUCTS, JSON.stringify(products));
+      resetProductForm();
+      renderProducts();
+      renderAdminProductList();
+    }
+
+    function deleteProductFromAdmin(productId) {
+      products = products.filter(p => p.id !== productId);
+      localStorage.setItem(STORAGE_KEYS.PRODUCTS, JSON.stringify(products));
+      renderProducts();
+      renderAdminProductList();
+      showToast('Product removed from catalog');
+    }
+
+    function resetCatalogToDefaults() {
+      products = [...DEFAULT_PRODUCTS];
+      localStorage.removeItem(STORAGE_KEYS.PRODUCTS);
+      products.forEach(p => {
+        selectedSizes[p.id] = 'M';
+      });
+      resetProductForm();
+      renderProducts();
+      renderAdminProductList();
+      showToast('Default VULKRO catalog restored');
+    }
+
+    function handleNewsletter(event) {
+      event.preventDefault();
+      event.target.reset();
+      showToast('Subscribed to VULKRO VIP Drop Alerts!');
+    }
+
+    // Toast Helper
+    let toastTimeout;
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-message').textContent = message;
+      toast.classList.remove('opacity-0', 'translate-y-3');
+      toast.classList.add('opacity-100', 'translate-y-0');
+
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-3');
+        toast.classList.remove('opacity-100', 'translate-y-0');
+      }, 3000);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeQuickView();
+        closeBagDrawer();
+        closeAdminDrawer();
+      }
+    });
+
+    // Boot Storefront
+    applyStoreSettingsToUI();
+    renderProducts();
+    updateBagUI();
+  </script>
+</body>
+</html>
